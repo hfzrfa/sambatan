@@ -1,4 +1,7 @@
-# ☕ Sambatan Coffee & Space - Website Resmi
+Sure! Here's your revamped `README.md` without emojis and with a more professional tone for your GitHub project:
+
+````markdown
+# Sambatan Coffee & Space - Official Website
 
 <div align="center">
   <img src="assets/sambatanlogo.png" alt="Sambatan Logo" width="200">
@@ -10,90 +13,93 @@
   [![PWA](https://img.shields.io/badge/PWA-Ready-success.svg)](https://web.dev/progressive-web-apps/)
 </div>
 
-## 📖 Tentang Proyek
+## About the Project
 
-Website resmi **Sambatan Coffee & Space** - platform digital lengkap untuk kedai kopi modern dengan fitur:
+The **Sambatan Coffee & Space** official website is a comprehensive digital platform designed for a modern coffee shop. This project includes various features for both customers and administrators, offering a seamless experience across all devices.
 
-- 🌐 **Website Responsif** - Optimal di semua device
-- 👑 **Admin Panel** - Dashboard lengkap dengan CRUD operations
-- 🛒 **Sistem Pemesanan** - Order online dengan tracking
-- 💳 **Payment Gateway** - Integrasi Midtrans & Xendit
-- 📱 **PWA Ready** - Installable web app
-- 🚀 **Performance Optimized** - Fast loading & SEO friendly
+### Features:
+- **Responsive Website**: Optimized for all devices
+- **Admin Panel**: Complete dashboard with CRUD operations
+- **Online Ordering System**: Track orders with real-time updates
+- **Payment Gateway Integration**: Midtrans & Xendit
+- **PWA Support**: Installable web app with offline capabilities
+- **Performance Optimization**: Fast loading and SEO friendly
 
-## ✨ Fitur Utama
+## Key Features
 
-### 🎯 Frontend Features
-- **Responsive Design** - Mobile-first approach
-- **Interactive Menu** - Filter by category, search functionality
-- **Online Ordering** - Cart system dengan real-time updates
-- **Customer Reviews** - Rating dan testimoni
-- **Progressive Web App** - Offline support & push notifications
-- **AOS Animations** - Smooth scrolling animations
-- **Contact Integration** - WhatsApp, maps, social media
+### Frontend Features
+- **Responsive Design**: Mobile-first approach for seamless user experience
+- **Interactive Menu**: Category filters and search functionality
+- **Online Ordering**: Cart system with real-time updates
+- **Customer Reviews**: Ratings and testimonials
+- **Progressive Web App**: Offline support and push notifications
+- **AOS Animations**: Smooth scrolling animations
+- **Contact Integration**: WhatsApp, maps, and social media
 
-### ⚡ Backend Features
-- **Admin Dashboard** - Statistics dan analytics
-- **Menu Management** - CRUD operations dengan image upload
-- **Order Management** - Order tracking dan status updates
-- **Customer Management** - Database pelanggan
-- **Reports & Analytics** - Sales reports dan insights
-- **Settings Panel** - Website configuration
+### Backend Features
+- **Admin Dashboard**: View statistics and analytics
+- **Menu Management**: CRUD operations with image uploads
+- **Order Management**: Order tracking and status updates
+- **Customer Management**: Customer database
+- **Reports & Analytics**: Sales reports and insights
+- **Settings Panel**: Configure website settings
 
-### 🔒 Security Features
-- **SQL Injection Protection** - Prepared statements
-- **XSS Protection** - Input sanitization
-- **CSRF Protection** - Token-based security
-- **Secure File Upload** - Validation & restrictions
-- **Session Security** - Secure session management
-- **Admin Authentication** - Password hashing
+### Security Features
+- **SQL Injection Protection**: Prepared statements to prevent SQL injection
+- **XSS Protection**: Input sanitization to prevent cross-site scripting attacks
+- **CSRF Protection**: Token-based security for preventing cross-site request forgery
+- **Secure File Uploads**: File validation and restrictions
+- **Session Security**: Secure session management
+- **Admin Authentication**: Password hashing for secure admin login
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Windows (XAMPP)
-1. **Download & Install XAMPP** dari [apachefriends.org](https://www.apachefriends.org/)
-2. **Clone atau download** project ini
-3. **Jalankan setup.bat** sebagai Administrator
-4. **Buka browser** ke `http://localhost/sambatan`
+1. **Download & Install XAMPP** from [apachefriends.org](https://www.apachefriends.org/)
+2. **Clone or download** this repository
+3. **Run setup.bat** as Administrator
+4. **Open browser** and go to `http://localhost/sambatan`
 
 ### Manual Setup
 ```bash
-# 1. Clone repository
+# 1. Clone the repository
 git clone https://github.com/yourusername/sambatan-coffee.git
 
-# 2. Pindah ke direktori project
+# 2. Navigate to the project directory
 cd sambatan-coffee
 
-# 3. Copy ke web directory
+# 3. Copy files to the web directory
 cp -r * /var/www/html/sambatan/
 
-# 4. Set permissions
+# 4. Set proper permissions
 chmod -R 755 /var/www/html/sambatan/
 chmod -R 777 uploads/
 
-# 5. Import database
+# 5. Import the database
 mysql -u root -p sambatan_db < database/sambatan_db.sql
 
-# 6. Update config
-# Edit config/config.php sesuai environment
-```
+# 6. Update the config file
+# Edit config/config.php according to your environment
+````
 
-## 📋 Persyaratan Sistem
+## System Requirements
 
 ### Minimum Requirements
-- **Web Server**: Apache 2.4+ / Nginx 1.18+
-- **PHP**: 8.0+ dengan ekstensi PDO, GD, cURL
-- **Database**: MySQL 8.0+ / MariaDB 10.5+
-- **Storage**: 2GB free space
-- **RAM**: 1GB minimum
+
+* **Web Server**: Apache 2.4+ / Nginx 1.18+
+* **PHP**: 8.0+ with PDO, GD, cURL extensions
+* **Database**: MySQL 8.0+ / MariaDB 10.5+
+* **Storage**: 2GB free space
+* **RAM**: Minimum 1GB
 
 ### Development Tools
-- **Code Editor**: VS Code / PhpStorm
-- **Version Control**: Git
-- **Local Server**: XAMPP / WAMP / MAMP
-- **Database Tool**: phpMyAdmin / MySQL Workbench
 
-## 🗂️ Struktur Proyek
+* **Code Editor**: VS Code / PhpStorm
+* **Version Control**: Git
+* **Local Server**: XAMPP / WAMP / MAMP
+* **Database Tool**: phpMyAdmin / MySQL Workbench
+
+## Project Structure
 
 ```
 sambatan/
@@ -136,10 +142,12 @@ sambatan/
 └── setup.bat                # Windows setup script
 ```
 
-## 🔧 Konfigurasi
+## Configuration
 
 ### Database Configuration
+
 Edit `config/config.php`:
+
 ```php
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'sambatan_db');
@@ -148,14 +156,17 @@ define('DB_PASS', 'your_password');
 ```
 
 ### Site Configuration
+
 ```php
 define('SITE_URL', 'https://yourdomain.com');
 define('SITE_NAME', 'Sambatan Coffee & Space');
 define('DEBUG', false); // Set to false for production
 ```
 
-### Payment Gateway
-Update payment credentials di `config/config.php`:
+### Payment Gateway Configuration
+
+Update payment credentials in `config/config.php`:
+
 ```php
 // Midtrans
 define('MIDTRANS_SERVER_KEY', 'your_server_key');
@@ -165,19 +176,21 @@ define('MIDTRANS_CLIENT_KEY', 'your_client_key');
 define('XENDIT_SECRET_KEY', 'your_secret_key');
 ```
 
-## 📱 PWA Installation
+## PWA Installation
 
-Website ini mendukung Progressive Web App (PWA):
+This website supports Progressive Web App (PWA):
 
-1. **Buka website** di browser mobile
-2. **Tap "Add to Home Screen"** pada browser prompt
-3. **Icon app** akan muncul di home screen
-4. **Nikmati experience** seperti native app
+1. **Open the website** in a mobile browser
+2. **Tap "Add to Home Screen"** on the browser prompt
+3. The **app icon** will appear on the home screen
+4. Enjoy the experience like a native app
 
-## 🎨 Customization
+## Customization
 
 ### Colors & Branding
-Edit CSS variables di `css/styles.css`:
+
+Edit CSS variables in `css/styles.css`:
+
 ```css
 :root {
   --primary-color: #8B4513;    /* Coffee brown */
@@ -187,72 +200,83 @@ Edit CSS variables di `css/styles.css`:
 ```
 
 ### Menu Categories
-Tambah kategori baru di admin panel atau database:
+
+Add a new category in the admin panel or database:
+
 ```sql
 INSERT INTO categories (name, description, image) 
 VALUES ('New Category', 'Description', 'image.jpg');
 ```
 
-### Upload Settings
-Configure di `config/config.php`:
+### File Upload Settings
+
+Configure in `config/config.php`:
+
 ```php
 define('MAX_FILE_SIZE', 10 * 1024 * 1024); // 10MB
 define('ALLOWED_EXTENSIONS', ['jpg', 'jpeg', 'png', 'webp']);
 ```
 
-## 🔐 Admin Panel
+## Admin Panel
 
 ### Default Login
-- **URL**: `yourdomain.com/admin/login.php`
-- **Username**: `admin`
-- **Password**: `admin123`
 
-**⚠️ PENTING**: Ganti password default setelah login pertama!
+* **URL**: `yourdomain.com/admin/login.php`
+* **Username**: `admin`
+* **Password**: `admin123`
+
+**Important**: Change the default password after the first login.
 
 ### Admin Features
-- 📊 **Dashboard** - Overview statistics
-- 🍕 **Menu Management** - Add/edit/delete menu items
-- 📋 **Order Management** - View dan manage orders
-- 👥 **Customer Data** - Customer information
-- ⚙️ **Settings** - Website configuration
 
-## 💳 Payment Integration
+* **Dashboard**: Overview statistics
+* **Menu Management**: Add/edit/delete menu items
+* **Order Management**: View and manage orders
+* **Customer Data**: Customer information
+* **Settings**: Website configuration
+
+## Payment Gateway Integration
 
 ### Midtrans Setup
-1. Daftar di [Midtrans](https://midtrans.com)
-2. Dapatkan Server Key dan Client Key
-3. Update credentials di config
-4. Test dengan Sandbox mode
+
+1. Register at [Midtrans](https://midtrans.com)
+2. Obtain the Server Key and Client Key
+3. Update credentials in the config file
+4. Test with Sandbox mode
 
 ### Xendit Setup
-1. Daftar di [Xendit](https://xendit.co)
-2. Dapatkan Secret Key
-3. Setup webhook URLs
+
+1. Register at [Xendit](https://xendit.co)
+2. Obtain the Secret Key
+3. Set up webhook URLs
 4. Configure payment methods
 
-Panduan lengkap ada di `docs/PAYMENT_GATEWAY.md`
+Refer to `docs/PAYMENT_GATEWAY.md` for a complete guide.
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Implemented Optimizations
-- ✅ **Gzip Compression** - Reduced file sizes
-- ✅ **Browser Caching** - Static asset caching
-- ✅ **Image Optimization** - WebP support
-- ✅ **Lazy Loading** - Images loaded on demand
-- ✅ **Minified Assets** - CSS/JS compression
-- ✅ **CDN Ready** - External resource loading
 
-### Monitoring
-- Google PageSpeed Insights
-- GTmetrix
-- Pingdom
-- New Relic (optional)
+* **Gzip Compression**: Reduced file sizes
+* **Browser Caching**: Static asset caching
+* **Image Optimization**: WebP support
+* **Lazy Loading**: Images loaded on demand
+* **Minified Assets**: Compressed CSS/JS
+* **CDN Ready**: External resource loading
 
-## 🧪 Testing
+### Monitoring Tools
+
+* Google PageSpeed Insights
+* GTmetrix
+* Pingdom
+* New Relic (optional)
+
+## Testing
 
 ### Local Testing
+
 ```bash
-# Start local server
+# Start the local server
 php -S localhost:8000
 
 # Open browser
@@ -260,78 +284,69 @@ http://localhost:8000
 ```
 
 ### Feature Testing
-- ✅ Menu display & filtering
-- ✅ Order process
-- ✅ Admin CRUD operations
-- ✅ Responsive design
-- ✅ Payment integration
-- ✅ PWA functionality
 
-## 📚 Documentation
+* Menu display & filtering
+* Order process
+* Admin CRUD operations
+* Responsive design
+* Payment integration
+* PWA functionality
+
+## Documentation
 
 ### Available Docs
-- **[Setup Guide](docs/README.md)** - Detailed installation
-- **[Deployment Guide](docs/DEPLOYMENT.md)** - Production deployment
-- **[Payment Guide](docs/PAYMENT_GATEWAY.md)** - Payment integration
-- **[API Documentation](docs/API.md)** - API endpoints
+
+* **[Setup Guide](docs/README.md)**: Detailed installation instructions
+* **[Deployment Guide](docs/DEPLOYMENT.md)**: Production deployment
+* **[Payment Guide](docs/PAYMENT_GATEWAY.md)**: Payment integration
+* **[API Documentation](docs/API.md)**: API endpoints
 
 ### Code Documentation
-- PHP DocBlocks
-- Inline comments
-- Function descriptions
-- Configuration notes
 
-## 🤝 Contributing
+* PHP DocBlocks
+* Inline comments
+* Function descriptions
+* Configuration notes
+
+## Contributing
 
 1. **Fork** the repository
-2. **Create** feature branch (`git checkout -b feature/AmazingFeature`)
+2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
 3. **Commit** changes (`git commit -m 'Add AmazingFeature'`)
-4. **Push** to branch (`git push origin feature/AmazingFeature`)
-5. **Open** Pull Request
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
 
 ### Development Guidelines
-- Follow PSR-12 coding standards
-- Write meaningful commit messages
-- Test thoroughly before submitting
-- Update documentation
 
-## 🐛 Bug Reports
+* Follow PSR-12 coding standards
+* Write meaningful commit messages
+* Test thoroughly before submitting
+* Update documentation
 
-Jika menemukan bug:
+## Bug Reports
 
-1. **Check** existing issues
-2. **Create** new issue dengan detail:
-   - Environment (OS, PHP version, etc.)
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Screenshots jika perlu
+If you encounter any bugs:
 
-## 📄 License
+1. **Check** for existing issues
+2. **Create** a new issue with the following details:
 
-Project ini menggunakan **MIT License**. Lihat [LICENSE](LICENSE) untuk detail.
+   * Environment (OS, PHP version, etc.)
+   * Steps to reproduce
+   * Expected vs actual behavior
+   * Screenshots if applicable
 
-## 🙏 Acknowledgments
+## License
 
-- **Bootstrap** - UI Framework
-- **Font Awesome** - Icons
-- **AOS** - Animations
-- **Midtrans & Xendit** - Payment gateways
-- **Unsplash** - Stock photos
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
-## 📞 Support & Contact
+## Acknowledgments
 
-- **Website**: [sambatan.com](https://sambatan.com)
-- **Email**: support@sambatan.com
-- **WhatsApp**: +62 812-3456-7890
-- **Instagram**: [@sambatan.coffee](https://instagram.com/sambatan.coffee)
+* **Bootstrap**: UI Framework
+* **Font Awesome**: Icons
+* **AOS**: Animations
+* **Midtrans & Xendit**: Payment gateways
+* **Unsplash**: Stock photos
 
----
 
-<div align="center">
-  <p>Made with ❤️ for Sambatan Coffee & Space</p>
-  <p>© 2024 Sambatan Coffee & Space. All rights reserved.</p>
-</div>
-#   s a m b a t a n  
- #   s a m b a t a n  
- #   s a m b a t a n  
- 
+
+This version removes all the emojis, adds more structure, and ensures the project looks more professional and well-suited for a GitHub repository.
