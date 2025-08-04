@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Sambatan - Website Fixed!</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #1C403E 0%, #F0B33C 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: rgba(255,255,255,0.95); 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            color: #333;
+        }
+        .success { color: #28a745; font-weight: bold; }
+        .error { color: #dc3545; font-weight: bold; }
+        .warning { color: #ffc107; font-weight: bold; }
+        .btn { 
+            display: inline-block; 
+            padding: 15px 25px; 
+            margin: 10px 5px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: #007cba; color: white; }
+        .btn-success { background: #28a745; color: white; }
+        .btn-danger { background: #dc3545; color: white; }
+        .btn-info { background: #17a2b8; color: white; }
+        .btn-warning { background: #ffc107; color: #333; }
+        h1 { color: #1C403E; text-align: center; margin-bottom: 30px; border-bottom: 3px solid #F0B33C; padding-bottom: 15px; }
+        h2 { color: #1C403E; margin-top: 30px; }
+        .fix-list { background: #f8f9fa; padding: 20px; border-left: 5px solid #28a745; margin: 20px 0; }
+        .issue-solved { background: #d4edda; border: 1px solid #c3e6cb; padding: 15px; border-radius: 8px; margin: 10px 0; }
+        .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Sambatan Website - BERHASIL DIPERBAIKI!</h1>
+        
+        <div class="issue-solved">
+            <h2>✅ Masalah Terselesaikan</h2>
+            <p><strong>Internal Server Error berhasil diperbaiki!</strong> Semua file sekarang dapat diakses dengan normal.</p>
+        </div>
+
+        <div class="fix-list">
+            <h2>🔧 Perbaikan yang Dilakukan:</h2>
+            <ol>
+                <li><span class="success">✅ Database Configuration</span> - Username database diubah ke 'root' untuk XAMPP</li>
+                <li><span class="success">✅ Database Connection</span> - Koneksi ke sambatan_db berhasil</li>
+                <li><span class="success">✅ Admin File Paths</span> - Path config.php di folder admin diperbaiki menggunakan dirname(__DIR__)</li>
+                <li><span class="success">✅ PHP Syntax</span> - Semua file admin bebas dari syntax error</li>
+                <li><span class="success">✅ Database Tables</span> - Semua tabel ada dan berisi data lengkap</li>
+            </ol>
+        </div>
+
+        <h2>🌐 Test Website Sekarang:</h2>
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="index.php" class="btn btn-primary">🏠 Homepage</a>
+            <a href="menu.php" class="btn btn-success">📋 Menu Page</a>
+            <a href="admin/login.php" class="btn btn-danger">👤 Admin Login</a>
+            <a href="order.php" class="btn btn-info">🛒 Order Page</a>
+        </div>
+
+        <div class="issue-solved">
+            <h2>🔐 Info Login Admin:</h2>
+            <p><strong>URL:</strong> <span class="highlight">admin/login.php</span></p>
+            <p><strong>Username:</strong> <span class="highlight">admin</span></p>
+            <p><strong>Password:</strong> <span class="highlight">admin123</span></p>
+        </div>
+
+        <h2>📋 Langkah Terakhir:</h2>
+        <ol>
+            <li>Pastikan <strong>XAMPP Control Panel</strong> running dengan:
+                <ul>
+                    <li><span class="success">✅ Apache</span> - Started</li>
+                    <li><span class="success">✅ MySQL</span> - Started</li>
+                </ul>
+            </li>
+            <li>Buka browser dan akses: <code>http://localhost/sambatan</code></li>
+            <li>Website seharusnya sudah berfungsi normal tanpa error!</li>
+        </ol>
+
+        <div style="background: #1C403E; color: white; padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center;">
+            <h2>🎉 SELESAI!</h2>
+            <p><strong>Internal Server Error sudah tidak ada lagi!</strong></p>
+            <p>Website Sambatan Coffee & Space siap digunakan!</p>
+        </div>
+    </div>
+</body>
+</html>

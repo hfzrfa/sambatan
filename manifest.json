@@ -1,0 +1,26 @@
+{
+  "name": "Sambatan Coffee & Space",
+  "short_name": "Sambatan",
+  "description": "Kopi segar dengan suasana yang nyaman untuk nongkrong dan bekerja",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1C403E",
+  "theme_color": "#F0B33C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/sambatanlogo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/sambatan.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["food", "business"],
+  "lang": "id",
+  "scope": "/",
+  "prefer_related_applications": false
+}

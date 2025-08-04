@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sambatan - Status Check</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .status-ok { color: #28a745; font-weight: bold; }
+        .status-error { color: #dc3545; font-weight: bold; }
+        .status-warning { color: #ffc107; font-weight: bold; }
+        .section { margin: 20px 0; padding: 15px; border-left: 4px solid #007cba; background: #f8f9fa; }
+        .btn { display: inline-block; padding: 12px 24px; margin: 5px; text-decoration: none; border-radius: 5px; color: white; font-weight: bold; }
+        .btn-primary { background: #007cba; }
+        .btn-success { background: #28a745; }
+        .btn-danger { background: #dc3545; }
+        .btn-info { background: #17a2b8; }
+        h1 { color: #1C403E; text-align: center; margin-bottom: 30px; }
+        h2 { color: #1C403E; border-bottom: 2px solid #1C403E; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛠️ Sambatan Website - Status Check</h1>
+        
+        <div class="section">
+            <h2>✅ Perbaikan Selesai</h2>
+            <p>Internal Server Error telah diperbaiki dengan menyelesaikan masalah berikut:</p>
+            <ul>
+                <li><span class="status-ok">✅ Database Configuration:</span> Username database diubah dari kosong menjadi 'root'</li>
+                <li><span class="status-ok">✅ Database Connection:</span> Koneksi ke database sambatan_db berhasil</li>
+                <li><span class="status-ok">✅ Database Tables:</span> Semua tabel sudah ada dan berisi data</li>
+                <li><span class="status-ok">✅ File Permissions:</span> Direktori uploads dan file lainnya dapat diakses</li>
+                <li><span class="status-ok">✅ PHP Configuration:</span> Tidak ada syntax error dalam file PHP</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Yang Sudah Diperbaiki</h2>
+            <ol>
+                <li><strong>Database Connection Error</strong> - File config.php telah diupdate dengan kredensial database yang benar untuk XAMPP</li>
+                <li><strong>Database Setup</strong> - Database sambatan_db telah dibuat dan diisi dengan data lengkap</li>
+                <li><strong>File Structure</strong> - Semua file penting sudah ada dan dapat diakses</li>
+                <li><strong>PHP Syntax</strong> - Tidak ada error syntax dalam file-file utama</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>🌐 Test Website</h2>
+            <p>Klik link berikut untuk menguji website:</p>
+            <a href="index.php" class="btn btn-primary" target="_blank">🏠 Homepage</a>
+            <a href="menu.php" class="btn btn-success" target="_blank">📋 Menu Page</a>
+            <a href="admin/login.php" class="btn btn-danger" target="_blank">🔐 Admin Login</a>
+            <a href="order.php" class="btn btn-info" target="_blank">🛒 Order Page</a>
+        </div>
+
+        <div class="section">
+            <h2>📋 Informasi Admin</h2>
+            <p>Untuk mengakses admin panel:</p>
+            <ul>
+                <li><strong>URL:</strong> <a href="admin/login.php">admin/login.php</a></li>
+                <li><strong>Username:</strong> admin</li>
+                <li><strong>Password:</strong> admin123</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ Pastikan XAMPP Berjalan</h2>
+            <p>Pastikan service berikut berjalan di XAMPP Control Panel:</p>
+            <ul>
+                <li><span class="status-ok">✅ Apache</span> - Web server untuk menjalankan PHP</li>
+                <li><span class="status-ok">✅ MySQL</span> - Database server untuk data website</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎉 Website Siap Digunakan!</h2>
+            <p>Internal Server Error telah berhasil diperbaiki. Website Sambatan Coffee & Space sekarang dapat diakses dengan normal.</p>
+            <p><strong>URL Website:</strong> <a href="http://localhost/sambatan">http://localhost/sambatan</a></p>
+        </div>
+    </div>
+</body>
+</html>
