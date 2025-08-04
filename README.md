@@ -1,17 +1,6 @@
 Sure! Here's your revamped `README.md` without emojis and with a more professional tone for your GitHub project:
 
 ````markdown
-# Sambatan Coffee & Space - Official Website
-
-<div align="center">
-  <img src="assets/sambatanlogo.png" alt="Sambatan Logo" width="200">
-  
-  [![PHP Version](https://img.shields.io/badge/PHP-8.0%2B-blue.svg)](https://php.net)
-  [![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-orange.svg)](https://mysql.com)
-  [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple.svg)](https://getbootstrap.com)
-  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-  [![PWA](https://img.shields.io/badge/PWA-Ready-success.svg)](https://web.dev/progressive-web-apps/)
-</div>
 
 ## About the Project
 
@@ -350,3 +339,4 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 
 
 This version removes all the emojis, adds more structure, and ensures the project looks more professional and well-suited for a GitHub repository.
+
